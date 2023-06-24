@@ -42,7 +42,7 @@ while(isEnded):
         print("wykres spolki")
         for i in range(len(stockHistory)):
             print(firstYear + i, ':', '#' * int(stockHistory[i] / 5), "Buy:",stockHistory[i],"Sell:" ,stockHistory[i]*0.98)
-        choice = int(input("Czy chcesz kupić akcje tej spółki? 1 = Tak, 2 = nie"))
+        choice = int(input("Czy chcesz kupić akcje tej spółki? 1 = Tak, 2 i więcej = nie"))
         while(choice==1):
             amountOfActions = int(input("Ile akcji chcesz zakupić?"))
             if(playerMoney >= buyingPrice*amountOfActions):
